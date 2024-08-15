@@ -61,6 +61,7 @@
     
     #menu::before {
         content: "☰";
+        left: 20%;
         
     }
     
