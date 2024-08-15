@@ -1,0 +1,209 @@
+@media (max-width: 768px) {
+    header {
+        position: relative; /* Ensure child elements can be positioned relative to header */
+        flex-direction: row; /* Align items in a row */
+        align-items: center; /* Vertically center the items */
+        justify-content: space-between; /* Distribute space between elements */
+    }
+    .navigation{
+        display: block;
+        justify-content: space-between; /* Distribute space between images */
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        background-color: #333;
+        color: #fff;
+        background-color: #f8f8f8;
+        margin-top: 1px;
+        
+    }
+    
+    .navigation a {
+        display: none;
+        flex-direction: column;
+        list-style: none;
+        background-color: #f8f8f8;
+        color: #000;
+        text-decoration: none;
+        padding: 1rem;
+        margin-left: 0; 
+        padding-left: 0; 
+    }
+    .navigation a:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+        color: #333;
+        font-weight: 700;
+    }
+    
+    nav .active {
+        background-color: rgba(0, 0, 0, 0.3);
+        
+        
+    }
+    .navigation.open a {
+        display: block;
+    }
+
+    
+    #menu {
+        display: block; /* Show the menu button on smaller screens */
+        font-size: 1.5rem;
+        border: 0;
+        background: none;
+        color: #000;
+        position: relative; /* Position the menu button relative to its place */
+        z-index: 2; /* Ensure it stays above the opened menu */
+        
+    }
+    
+    #menu::before {
+        content: "☰";
+        
+    }
+    
+    #menu.open::before {
+        content: "❎";
+
+        
+
+
+    }
+
+    .search-bar {
+        width: 50%;
+    }
+    nav ul {
+        display: none; /* Hide the navigation by default */
+        flex-direction: column; /* Stack the navigation items vertically */
+        position: absolute;
+        top: 100%; /* Position the menu below the header */
+        left: 0; /* Align navigation to the left */
+        right: 0;
+        background-color: #f8f8f8;
+        gap: 5px;
+        border-top: 1px solid #e0e0e0;
+        z-index: 1; /* Ensure the menu appears behind the logo and cart */
+    }
+
+   nav ul.open {
+        display: flex; /* Show the navigation when the menu is open */
+    }
+
+    .logo{
+        order: 2; /* Center the logo */
+        position: relative; /* Use relative positioning */
+        left: 70%;
+        transform: translateX(-150%);
+        z-index: 2; /* Ensure the logo stays above the opened menu */
+        max-width: -10px;
+       
+    }
+
+    nav {
+        order: 1; /* Keep the navigation to the left */
+        flex-grow: 1;
+        position: relative;
+        z-index: 2; /* Ensure navigation stays above the opened menu *//
+    }
+
+    .cart-icon {
+        order: 3; /* Keep the cart icon on the right */
+        position: relative;
+        z-index: 2; /* Ensure cart icon stays above the opened menu */
+    }
+
+    .product-gallery {
+        flex-direction: column; /* Stack images on top of each other on mobile */
+    }
+
+    .product-image {
+        width: 100%; /* Full width on smaller screens */
+        margin-bottom: 10px; /* Space between stacked images */
+        margin-top: 15px;
+    }
+
+
+    /* styles.css */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.footer {
+  background-color: #2d2d2d; /* Neutral background color */
+  color: #ffffff; /* Text color */
+  padding: 2rem 1rem; /* Padding around the footer */
+}
+
+
+
+.footer p {
+  margin: 0;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.footer-title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  display: block;
+  font-weight: bold;
+}
+.footer {
+    flex-direction: column;
+}
+
+.footer > div {
+    min-width: 100%; /* Full width on smaller screens */
+}
+
+
+
+
+.link {
+  color: #ffffff; /* Link color */
+  text-decoration: none;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.link-hover:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+.grid {
+  display: grid;
+}
+
+.grid-flow-col {
+  grid-auto-flow: column;
+}
+
+.gap-4 {
+  gap: 1rem;
+}
+
+.fill-current {
+  fill: currentColor; /* SVG icons inherit text color */
+}
+
+a {
+  color: inherit; /* Ensure the links inherit the text color */
+}
+
+a:hover {
+  color: #e0e0e0; /* Slightly lighter color on hover */
+}
+.footer {
+    flex-direction: column;
+}
+
+.footer > div {
+    min-width: 100%; /* Full width on smaller screens */
+}
+    
+}
