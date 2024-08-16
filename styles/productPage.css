@@ -7,6 +7,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #f8f8f8;
 }
 
 /* Header */
@@ -77,6 +78,25 @@ nav a {
 
 .search-button:hover {
     background-color: #555;
+}
+
+.next-product-btn , .previous-product-btn{
+    padding: 8px 20px;
+    margin-left: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.submit-review-btn {
+    padding: 8px 20px;
+    margin-left: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 /* Main Content */

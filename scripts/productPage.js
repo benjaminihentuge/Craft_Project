@@ -51,6 +51,12 @@ document.addEventListener('DOMContentLoaded', function() {
         loadProduct(currentProductIndex);
     });
 
+     // "Next" button functionality
+     document.querySelector('.previous-product-btn').addEventListener('click', () => {
+        currentProductIndex = (currentProductIndex - 1) % products.length; // Cycle through products
+        loadProduct(currentProductIndex);
+    });
+
     // Add to cart functionality
     if (addToCartBtn) {
         addToCartBtn.addEventListener('click', () => {
