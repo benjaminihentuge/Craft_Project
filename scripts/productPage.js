@@ -128,10 +128,14 @@ document.addEventListener('DOMContentLoaded', function() {
             cart.forEach((item, index) => {
                 const cartItem = document.createElement('div');
                 cartItem.classList.add('cart-item');
+                
+                // Displaying the image, name, and price of the item
                 cartItem.innerHTML = `
+                    <img src="${item.images[0]}" alt="${item.name}" class="cart-item-image" />
                     <p>${item.name} - $${item.price}</p>
                     <button class="remove-item-btn" data-index="${index}">Remove</button>
                 `;
+                
                 cartContent.appendChild(cartItem);
             });
 

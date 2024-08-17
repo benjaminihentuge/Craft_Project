@@ -3,7 +3,7 @@
 
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -23,7 +23,6 @@ header {
 .logo {
     font-size: 24px; 
     font-weight: bold;
-    
 }
 
 #menu {
@@ -36,13 +35,12 @@ nav ul {
     gap: 100px;
     margin: 0;
     padding: 0;
-    
-    
 }
 
 nav a {
     text-decoration: none;
     color: #333;
+    font-weight: 400; /* Use Roboto's 400 weight for regular text */
 }
 
 .cart-icon {
@@ -74,13 +72,14 @@ nav a {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-weight: 700; /* Use Roboto's 700 weight for buttons */
 }
 
 .search-button:hover {
     background-color: #555;
 }
 
-.next-product-btn , .previous-product-btn{
+.next-product-btn, .previous-product-btn {
     padding: 8px 20px;
     margin-left: 10px;
     background-color: #333;
@@ -88,7 +87,9 @@ nav a {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-weight: 700;
 }
+
 .submit-review-btn {
     padding: 8px 20px;
     margin-left: 10px;
@@ -97,6 +98,7 @@ nav a {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-weight: 700;
 }
 
 /* Main Content */
@@ -133,16 +135,19 @@ main {
 .product-title {
     font-size: 28px;
     margin: 10px 0;
+    font-weight: 700;
 }
 
 .product-price {
     font-size: 22px;
     color: #e60000;
     margin: 10px 0;
+    font-weight: 700;
 }
 
 .product-description {
     margin: 10px 0;
+    font-weight: 400;
 }
 
 .add-to-cart-btn {
@@ -152,6 +157,7 @@ main {
     border: none;
     cursor: pointer;
     font-size: 16px;
+    font-weight: 700;
 }
 
 .reviews-container {
@@ -214,6 +220,13 @@ main {
     cursor: pointer;
 }
 
+.cart-item-image {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin-right: 10px;
+    vertical-align: middle;
+}
 
 /* Footer */
 footer {
