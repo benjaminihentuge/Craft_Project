@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', function() {
         loadReviews(product);
     }
 
-    // Load reviews for the current product
+    // Load reviews for the current product with 3 line breaks between each review
     function loadReviews(product) {
         reviewList.innerHTML = ''; // Clear previous reviews
         if (product.reviews && product.reviews.length > 0) {
@@ -62,6 +62,11 @@ document.addEventListener('DOMContentLoaded', function() {
                 reviewDiv.classList.add('review');
                 reviewDiv.textContent = review;
                 reviewList.appendChild(reviewDiv);
+                
+                // Add three line breaks after each review
+                for (let i = 0; i < 3; i++) {
+                    reviewList.appendChild(document.createElement('br'));
+                }
             });
         } else {
             const noReviewDiv = document.createElement('div');
@@ -127,6 +132,11 @@ document.addEventListener('DOMContentLoaded', function() {
                 review.textContent = reviewText;
                 reviewList.appendChild(review);
                 textarea.value = ''; // Clear the textarea
+                
+                // Add three line breaks after the submitted review
+                for (let i = 0; i < 3; i++) {
+                    reviewList.appendChild(document.createElement('br'));
+                }
             }
         });
     }
