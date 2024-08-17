@@ -40,7 +40,7 @@ nav ul {
 nav a {
     text-decoration: none;
     color: #333;
-    font-weight: 400; /* Use Roboto's 400 weight for regular text */
+    font-weight: 400; 
 }
 
 .cart-icon {
@@ -72,7 +72,7 @@ nav a {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-weight: 700; /* Use Roboto's 700 weight for buttons */
+    font-weight: 700;
 }
 
 .search-button:hover {
@@ -167,30 +167,21 @@ main {
     max-width: 1000px;
     width: 100%;
     margin-top: 20px;
-    
 }
 
 .review-chatbox {
-    border: 5px solid #ddd;
-    padding: 30px;
+    border: 1px solid #ddd;
+    padding: 20px;
     border-radius: 10px;
     background-color: #f8f8f8;
 }
 
 .review-list {
-    border: 1px solid #ddd;   
-    background-color: #fff;
-    border: 5px solid #ddd;
-    padding: 30px;
+    border: 1px solid #ddd;
+    padding: 20px;
     border-radius: 10px;
-    background-color: #f8f8f8;
+    background-color: #fff;
 }
-
-.text-area{
-    width: 300px;
-    height: 100px;
-}
-
 
 /* Modal Styles */
 .modal {
@@ -286,6 +277,10 @@ footer {
     margin: 10px 0 0 0;
 }
 
+.text-area{
+    width: 150px;
+    height: 100px;
+}
 .social-media a {
     text-decoration: none;
     color: #333;
@@ -315,14 +310,13 @@ a:hover {
     color: #e0e0e0;
 }
 
-/* Ensure that the footer takes up the full width */
+
 .footer > div {
     flex: 1;
     min-width: 200px;
     margin: 10px;
 }
 
-/* Optional: Adjust link styles */
 .link {
     display: block;
     margin: 5px 0;
