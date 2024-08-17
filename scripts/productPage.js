@@ -48,6 +48,27 @@ document.addEventListener('DOMContentLoaded', function() {
             img.classList.add('product-image');
             gallery.appendChild(img);
         });
+
+        // Load reviews for the current product
+        loadReviews(product);
+    }
+
+    // Load reviews for the current product
+    function loadReviews(product) {
+        reviewList.innerHTML = ''; // Clear previous reviews
+        if (product.reviews && product.reviews.length > 0) {
+            product.reviews.forEach(review => {
+                const reviewDiv = document.createElement('div');
+                reviewDiv.classList.add('review');
+                reviewDiv.textContent = review;
+                reviewList.appendChild(reviewDiv);
+            });
+        } else {
+            const noReviewDiv = document.createElement('div');
+            noReviewDiv.classList.add('no-review');
+            noReviewDiv.textContent = 'No reviews yet for this product.';
+            reviewList.appendChild(noReviewDiv);
+        }
     }
 
     // "Next" button functionality
