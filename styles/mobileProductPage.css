@@ -190,6 +190,19 @@ body {
   gap: 1rem;
 }
 
+
+.reviews-container {
+  display: block;
+  gap: 20px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+
+.review-list {
+  margin-top: 20px;
+}
+
 .fill-current {
   fill: currentColor; /* SVG icons inherit text color */
 }

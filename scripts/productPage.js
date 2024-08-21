@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const viewCartBtn = document.querySelector('.view-cart-btn'); // New: View Cart button
     const dropCartBtn = document.querySelector('.drop-cart-btn'); // New: Drop Cart button
     const cartContent = document.querySelector('.cart-content'); // Cart content container
-    const closeModalButtons = document.querySelectorAll('.modal .close'); // Select all close buttons in modals
+    const closeModalButtons = document.querySelectorAll('.modal .close'); 
     const jsonUrl = 'https://benjaminihentuge.github.io/storage/here.json';
 
     let currentProductIndex = 0;
